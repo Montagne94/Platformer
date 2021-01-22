@@ -8,7 +8,7 @@ public class SpawnPoints : MonoBehaviour
     [SerializeField] private GameObject _coint;
     [SerializeField] private GameObject _player;
     private Transform[] _points;
-    void Start()
+    private void Start()
     {
         _points = new Transform[_spawnPoints.childCount];
 

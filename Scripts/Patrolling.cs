@@ -8,14 +8,14 @@ public class Patrolling : MonoBehaviour
     private float _endPoint;
     private float _distance;
     private float _speed;
-    void Start()
+    private void Start()
     {
         _distance = Random.Range(1, 1.5f);
         _startPoint = transform.position.x;
         _endPoint = transform.position.x + _distance;
     }
 
-    void Update()
+    private void Update()
     {
         transform.Translate(_speed * Time.deltaTime, 0,0);
         if(transform.position.x > _endPoint)

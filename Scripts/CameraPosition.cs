@@ -6,8 +6,8 @@ public class CameraPosition : MonoBehaviour
 {
     [SerializeField] private GameObject _player;
 
-    void Update()
+    private void Update()
     {
-        transform.position = new Vector3(_player.transform.position.x, transform.position.y, -10f); 
+        transform.position = new Vector3(_player.transform.position.x, transform.position.y, transform.position.z); 
     }
 }
